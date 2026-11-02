@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Havan — Programmatore / Creative Mind</title>
+  <meta name="description" content="Portfolio di Havan: programmatore e creative mind.">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#about">Vai al contenuto principale</a>
+  <button class="enter-screen" type="button"><span>click to enter...</span></button>
+
+  <audio id="bgm" src="no-kizzy.mp3" loop preload="auto"></audio>
+  <div class="music-player" role="group" aria-label="Controlli musica">
+    <div class="mp-bar">
+      <button class="mp-btn" type="button" aria-label="Disattiva audio" aria-pressed="false">
+        <svg class="icon-on" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/>
+        </svg>
+        <svg class="icon-off" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M16 9l5 6M21 9l-5 6"/>
+        </svg>
+      </button>
+      <input class="mp-slider" type="range" min="0" max="100" value="50" aria-label="Volume">
+      <output class="mp-value">50</output>
+    </div>
+    <span class="mp-track">♪ no kizzy</span>
+  </div>
+
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="wordmark" href="#home" aria-label="Havan — torna in alto">havan<span>.</span></a>
+    <nav aria-label="Navigazione principale">
+      <a href="#home"><b>00</b> Home</a>
+      <a href="#about"><b>01</b> Chi sono</a>
+      <a href="#experience"><b>02</b> Experience</a>
+      <a href="#goals"><b>03</b> Obiettivi</a>
+      <a href="#interests"><b>04</b> Interessi</a>
+    </nav>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-top">
+        <p class="eyebrow">Programmatore / Creative Mind</p>
+        <p class="edition">Index — Edizione 2026 ©</p>
+      </div>
+
+      <div class="hero-title">
+        <span class="hero-kicker">&lt;developer&gt;</span>
+        <h1 data-scramble aria-label="Havan">HAVAN</h1>
+        <span class="hero-kicker">&lt;/developer&gt;</span>
+
+        <div class="orbit" aria-hidden="true">
+          <div class="ring one"></div>
+          <div class="ring two"></div>
+          <div class="ring three"></div>
+          <div class="core"></div>
+          <span class="orbit-label label-a">x: 0.00 / y: 0.00</span>
+          <span class="orbit-label label-b">render(idea)</span>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <p class="hero-intro">
+          Scrivo software <em>essenziale</em>. Pulito dentro, memorabile fuori.
+          Dove la logica incontra l'immaginazione.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-cta" href="#about"><span>Entra</span></a>
+          <a class="round-link" href="#about" aria-label="Vai alla sezione successiva">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 7l10 10M17 8v9H8"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <span class="scroll-indicator"><span class="scroll-line"></span>Scroll</span>
+        <div class="mini-terminal" role="img" aria-label="Terminale che esegue python build_ideas.py">
+          <span class="prompt">&gt;</span> <span class="typed" data-text="python build_ideas.py"></span><i></i>
+        </div>
+        <span class="page-indicator">01 — 05</span>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python ✦ C++ ✦ Algoritmi ✦ Creative Coding ✦ Clean Code ✦ Curiosità ✦ </span>
+        <span>Python ✦ C++ ✦ Algoritmi ✦ Creative Coding ✦ Clean Code ✦ Curiosità ✦ </span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="about-grid">
+        <div class="about-copy">
+          <p class="section-tag">01 / Chi sono</p>
+          <h2>Il codice è un <em>linguaggio</em>. Io lo parlo con accento creativo.</h2>
+          <!-- ✏️ MODIFICA: testi di presentazione -->
+          <p class="lead">
+            Sono Havan. Mi piace smontare i problemi fino all'osso e rimontarli in modo più semplice,
+            più veloce, più bello da guardare.
+          </p>
+          <p>
+            Python e C++ sono i miei strumenti, ma il vero mestiere è un altro: fare le domande giuste,
+            sperimentare senza paura e rifinire finché ogni dettaglio ha un senso.
+          </p>
+          <p>
+            Ho iniziato per curiosità, smontando giochi e piccoli programmi per capire come funzionavano.
+            Oggi trasformo quella curiosità in progetti veri: strumenti utili, interfacce curate e codice
+            che gli altri hanno piacere di leggere.
+          </p>
+
+          <dl class="about-facts">
+            <dt>Nome</dt><dd>Havan</dd>
+            <dt>Ruolo</dt><dd>Programmatore / Creative Mind</dd>
+            <dt>Base</dt><dd>Italia</dd>
+            <dt>Stack</dt><dd>Python · C++ · JavaScript</dd>
+            <dt>Stato</dt><dd>Aperto a nuove idee</dd>
+          </dl>
+
+          <div class="about-stats">
+            <div class="stat"><strong data-count="3" data-suffix="+">0</strong><span>anni di codice</span></div>
+            <div class="stat"><strong data-count="12" data-suffix="+">0</strong><span>progetti</span></div>
+            <div class="stat"><strong data-count="5">0</strong><span>linguaggi</span></div>
+          </div>
+        </div>
+
+        <figure class="code-card" data-tilt>
+          <div class="editor-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="file-name">about_me.cpp</span>
+          </div>
+<pre><code><span class="ln"><span class="syntax-purple">#include</span> <span class="syntax-green">&lt;iostream&gt;</span></span><span class="ln"><span class="syntax-purple">#include</span> <span class="syntax-green">&lt;string&gt;</span></span><span class="ln"> </span><span class="ln"><span class="syntax-blue">struct</span> <span class="syntax-orange">Developer</span> {</span><span class="ln">    std::string name  = <span class="syntax-green">"Havan"</span>;</span><span class="ln">    std::string focus = <span class="syntax-green">"clean code"</span>;</span><span class="ln">    <span class="syntax-blue">bool</span> curious       = <span class="syntax-purple">true</span>;</span><span class="ln">};</span><span class="ln"> </span><span class="ln"><span class="syntax-blue">int</span> <span class="syntax-orange">main</span>() {</span><span class="ln">    Developer me;</span><span class="ln">    <span class="syntax-comment">// sempre in cerca di idee nuove</span></span><span class="ln">    <span class="syntax-blue">while</span> (me.curious) {</span><span class="ln">        std::cout &lt;&lt; <span class="syntax-green">"learn → build → ship"</span>;</span><span class="ln">    }</span><span class="ln">    <span class="syntax-blue">return</span> <span class="syntax-purple">0</span>;</span><span class="ln">}</span></code></pre>
+          <div class="editor-status">
+            <span>● C++17</span>
+            <span>UTF-8</span>
+            <span>Ln 15, Col 2</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <div class="section-head">
+        <p class="section-tag">02 / Experience</p>
+        <h2>Il percorso <em>finora</em>.</h2>
+      </div>
+
+      <ol class="timeline">
+        <!-- ✏️ MODIFICA: duplica un <li> per aggiungere un'esperienza (la più recente va per prima) -->
+        <li class="timeline-item">
+          <span class="tl-date">2025 — Oggi</span>
+          <div class="tl-body">
+            <h3>Sviluppatore freelance</h3>
+            <p class="tl-place">Remoto · Italia</p>
+            <p>Realizzo siti, strumenti di automazione e piccoli software su misura, dal primo schizzo alla consegna.</p>
+            <ul class="tl-tags"><li>Python</li><li>JavaScript</li><li>HTML / CSS</li></ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <span class="tl-date">2024 — 2025</span>
+          <div class="tl-body">
+            <h3>Sviluppatore junior</h3>
+            <p class="tl-place">Nome azienda · Città</p>
+            <p>Sviluppo di funzionalità, correzione di bug e revisione del codice all'interno di un team di prodotto.</p>
+            <ul class="tl-tags"><li>C++</li><li>Git</li><li>Teamwork</li></ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <span class="tl-date">2023 — 2024</span>
+          <div class="tl-body">
+            <h3>Progetti personali &amp; hackathon</h3>
+            <p class="tl-place">Online</p>
+            <p>Prototipi, giochi e strumenti costruiti nel tempo libero per mettere alla prova idee e tecnologie nuove.</p>
+            <ul class="tl-tags"><li>Creative coding</li><li>Algoritmi</li></ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <span class="tl-date">2022</span>
+          <div class="tl-body">
+            <h3>Hello, World</h3>
+            <p class="tl-place">Autodidatta</p>
+            <p>Le prime righe di codice, tanti errori e la scoperta che programmare è il modo più bello di risolvere problemi.</p>
+            <ul class="tl-tags"><li>Python</li><li>Curiosità</li></ul>
+          </div>
+        </li>
+      </ol>
+
+      <!-- ✏️ MODIFICA: nomi utente, descrizioni e ruoli di Discord e Minecraft -->
+      <div class="platform-grid">
+        <article class="platform">
+          <div class="platform-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9c2.6-1 5.4-1 8 0M8.5 15.5c2.2 1 4.8 1 7 0M7 6.5l-2.5 2C3 11.5 2.5 15 3 18c1.5 1.2 3.2 2 5 2l1-1.7M17 6.5l2.5 2c1.5 3 2 6.5 1.5 9.5-1.5 1.2-3.2 2-5 2l-1-1.7M7 6.5C8.8 5.7 10.4 5.3 12 5.3s3.2.4 5 1.2"/></svg>
+            Discord
+          </div>
+          <h3>Community &amp; moderazione</h3>
+          <p>Gestione di server Discord: organizzazione dei canali, bot personalizzati e supporto alla community.</p>
+          <ul class="handles">
+            <li>hasbimc1 <span>account principale</span></li>
+            <li>hasbimc2 <span>secondario</span></li>
+          </ul>
+        </article>
+
+        <article class="platform">
+          <div class="platform-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.500v9L12 21l-8-4.500v-9L12 3zM12 12l8-4.500M12 12v9M12 12L4 7.500"/></svg>
+            Minecraft
+          </div>
+          <h3>Server, mondi &amp; plugin</h3>
+          <p>Costruzione di mondi, configurazione di server e sviluppo di piccoli plugin per rendere il gioco più mio.</p>
+          <ul class="handles">
+            <li>hasbimc1 <span>nickname</span></li>
+            <li>hasbimc2 <span>alt</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- OBIETTIVI -->
+    <section id="goals" class="section reveal">
+      <div class="section-head">
+        <p class="section-tag">03 / Obiettivi</p>
+        <h2>Dove voglio <em>arrivare</em>.</h2>
+      </div>
+
+      <div class="goals-grid">
+        <!-- ✏️ MODIFICA: titolo, descrizione e percentuale (--p e testo .goal-pct) -->
+        <article class="goal">
+          <div class="goal-head"><span class="goal-term">2026</span><span class="goal-status">In corso</span></div>
+          <h3>Padroneggiare il C++ moderno</h3>
+          <p>Puntatori intelligenti, template e concorrenza: scrivere codice veloce e sicuro senza compromessi.</p>
+          <div class="goal-progress"><div class="goal-bar"><span style="--p:60%"></span></div><span class="goal-pct">60%</span></div>
+        </article>
+
+        <article class="goal">
+          <div class="goal-head"><span class="goal-term">2026</span><span class="goal-status">In corso</span></div>
+          <h3>Pubblicare un progetto open source</h3>
+          <p>Costruire uno strumento utile, documentarlo bene e condividerlo con la community.</p>
+          <div class="goal-progress"><div class="goal-bar"><span style="--p:35%"></span></div><span class="goal-pct">35%</span></div>
+        </article>
+
+        <article class="goal">
+          <div class="goal-head"><span class="goal-term">2027</span><span class="goal-status">Pianificato</span></div>
+          <h3>Realizzare un'app completa end-to-end</h3>
+          <p>Dal design al deploy: interfaccia, logica, database e infrastruttura in un unico progetto.</p>
+          <div class="goal-progress"><div class="goal-bar"><span style="--p:20%"></span></div><span class="goal-pct">20%</span></div>
+        </article>
+
+        <article class="goal">
+          <div class="goal-head"><span class="goal-term">2027</span><span class="goal-status">Pianificato</span></div>
+          <h3>Entrare in un team di sviluppo</h3>
+          <p>Lavorare con persone più brave di me, imparare in fretta e contribuire a prodotti reali.</p>
+          <div class="goal-progress"><div class="goal-bar"><span style="--p:10%"></span></div><span class="goal-pct">10%</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERESSI -->
+    <section id="interests" class="section reveal">
+      <div class="learning-heading">
+        <div class="learning-copy">
+          <p class="section-tag">04 / Interessi</p>
+          <h2>Cosa studio, cosa <em>costruisco</em>.</h2>
+        </div>
+        <pre class="ascii-donut" aria-hidden="true"></pre>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 14l-8 10 8 10M30 14l8 10-8 10M27 10l-6 28"/>
+          </svg>
+          <span class="service-number">01</span>
+          <h3>Python &amp; Automazione</h3>
+          <p>Script e piccoli sistemi che eliminano il lavoro ripetitivo e liberano tempo per le idee.</p>
+          <a class="service-action" href="#home">Esplora</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="8" y="10" width="32" height="28" rx="4"/>
+            <path d="M8 18h32M16 26h8M16 31h14"/>
+          </svg>
+          <span class="service-number">02</span>
+          <h3>C++ &amp; Sistemi</h3>
+          <p>Memoria, performance, strutture dati: capire cosa succede sotto il cofano.</p>
+          <a class="service-action" href="#about">Esplora</a>
+        </article>
+
+        <article class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="24" r="6"/>
+            <ellipse cx="24" cy="24" rx="16" ry="7" transform="rotate(30 24 24)"/>
+            <ellipse cx="24" cy="24" rx="16" ry="7" transform="rotate(-30 24 24)"/>
+          </svg>
+          <span class="service-number">03</span>
+          <h3>Creative Coding</h3>
+          <p>Interfacce, animazioni e visual: dove l'estetica diventa algoritmo.</p>
+          <a class="service-action" href="#home">Esplora</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Havan — HTML, CSS e JavaScript scritti a mano.</p>
+    <a href="#home">Torna su ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
